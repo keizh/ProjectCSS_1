@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-family: "Poppins";
+}
+
+/* navigation start */
+nav {
+  font-size: 12px;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+
+  height: 10%;
+}
+
+nav i {
+  font-size: 12px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+/* navigation end */
+
+/* central start  */
+.central {
+  height: 55%;
+  color: black;
+  padding: 25px 70px 50px 70px;
+}
+
+.central h1 {
+  /* font-size: 48px; */
+  font-size: max(3.75vw, 3.75vh);
+  font-weight: 400;
+  line-height: max(4.141vw, 4.141vh);
+}
+
+.central-bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.central-bottom h4 {
+  background-color: white;
+  font-size: max(1vw, 1vh);
+  font-weight: 400;
+}
+
+.central-bottom-right {
+  background-color: white;
+  width: 20%;
+}
+
+.central-bottom-right .box {
+  background-color: white;
+  padding: max(0.625vw, 0.625vh) 0px;
+  border-top: max(0.156vw, 0.156vh) solid black;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.central-bottom-right .box a {
+  font-size: max(1.1vw, 1.1vh);
+  text-decoration: none;
+  color: black;
+}
+
+.central-bottom-right .box i {
+  font-size: max(1.563vw, 1.563vh);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.central-bottom-right .box:hover {
+  background-color: #eee;
+  border-top: 0.234vw solid black;
+}
+.central-bottom-right .box:hover i {
+  opacity: 1;
+}
+
+/* central end  */
+
+/* bottom start  */
+.bottom {
+  width: 100%;
+  height: 35%;
+  background: url(https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 35% 50%;
+}
+
+/* bottom end  */
+
+@media (max-width: 600px) {
+  /* navigation start */
+  nav {
+    font-size: 10px;
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+
+    height: 7%;
+  }
+
+  nav i {
+    font-size: 10px;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+  }
+
+  /* navigation end */
+
+  /* central start  */
+  .central {
+    height: fit-content;
+    color: black;
+    padding: 25px 20px;
+    /* background-color: red; */
+  }
+
+  .central h1 {
+    /* font-size: 48px; */
+    font-size: 9vw;
+    font-weight: 400;
+    line-height: 10vw;
+  }
+
+  .central-bottom {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .central-bottom h4 {
+    /* background-color: red; */
+    font-size: 2.5vw;
+    font-weight: 500;
+  }
+
+  .central-bottom-right {
+    background-color: white;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .central-bottom-right .box {
+    /* background-color: white; */
+    padding: 6px 0px;
+    border-top: 2px solid black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .central-bottom-right .box a {
+    font-size: 4vw;
+    text-decoration: none;
+    color: black;
+  }
+
+  .central-bottom-right .box i {
+    font-size: 4.5vw;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  .central-bottom-right .box:hover {
+    background-color: #eee;
+    border-top: 3px solid black;
+  }
+  .central-bottom-right .box:hover i {
+    opacity: 1;
+  }
+
+  /* central end  */
+
+  /* bottom start  */
+  .bottom {
+    width: 100%;
+    height: calc(100vh - 46.71px - 359.59px);
+    background: url(https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 35% 50%;
+  }
+
+  /* bottom end  */
+}
